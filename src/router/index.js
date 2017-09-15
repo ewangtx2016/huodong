@@ -22,23 +22,23 @@ export default new Router({
       component: List
     },
     {
-      path: '/Explain',
+      path: '/explain',
       component: Explain
     },
     {
-      path: '/Login',
+      path: '/login',
       component: Login
     },
     {
-      path: '/Myjoin',
+      path: '/myjoin',
       component: Myjoin
     },
     {
-      path: '/Mystart',
+      path: '/mystart',
       component: Mystart
     },
     {
-      path: '/Sign',
+      path: '/sign',
       component:Sign
     },
   ]

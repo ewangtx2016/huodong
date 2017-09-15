@@ -1,6 +1,8 @@
 <template>
+
     <div>
-      列表
+      <router-link to="/">首页</router-link>
+      <router-link to="/list">列表</router-link>
     </div>
 </template>
 
