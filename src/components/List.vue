@@ -1,6 +1,10 @@
 <template>
     <div>
-      列表
+       <ul class="list">
+         <li class="list-item">
+           <div class="detail"></div>
+         </li>
+       </ul>
     </div>
 </template>
 
