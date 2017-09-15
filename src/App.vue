@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import './public/js/public';
+import './public/js/public'
 export default {
   name: 'app'
 }
@@ -14,6 +14,6 @@ export default {
 <style lang="less">
   @import './public/less/public.less';
   body{
-    font-size: 1rem;
+    font-size: 0.16rem;
   }
 </style>
