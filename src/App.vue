@@ -5,12 +5,12 @@
 </template>
 
 <script>
-import publijs from './public/js/public'
+import './public/js/public' 
 export default {
   name: 'app'
 }
 </script>
 
-<style>
-
+<style lang="less">
+@import './public/less/public';
 </style>
