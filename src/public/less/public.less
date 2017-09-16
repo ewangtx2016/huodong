@@ -45,8 +45,12 @@ body,html{
   left:@b;
   top:@c;
   z-index:@z;
-  transform: translateZ(@z);
+  transform: translateZ((@z*500px));
 }
+
+
+
+
 
 /*home css*/
 #app{
@@ -57,11 +61,15 @@ body,html{
 
 .lv_box{
   .whBai;
-  perspective: 500px;
+  perspective:1px;
   transform-style:preserve-3d;
   background: url("../img/lv_bak.jpg") no-repeat center bottom;
   background-size: 100% 100%;
   position: relative;
+  overflow: hidden;
+  
+  
+  animation: 10s box_per 1s forwards  cubic-bezier(.99,.03,1,.02);
 
 
   .lv_guang{
@@ -69,7 +77,8 @@ body,html{
     height:11.24rem;
     background: url("../img/lv_bobg.png") no-repeat center;
     background-size: 100% 100%;
-    .pos(absolute,-1.7rem,-1.7rem,1);
+    .pos(absolute,-1.7rem,-1.7rem,0);
+    transform: translateZ(10px);
     animation: 33s yuerotate forwards infinite linear;
   }
 
@@ -78,7 +87,9 @@ body,html{
     height:8.18rem;
     background: url("../img/lv_yue.png") no-repeat center;
     background-size: 100% 100%;
-    .pos(absolute,0,0,1);
+    .pos(absolute,0,0,0);
+    transform: translateZ(10px);
+
   }
   
   .yun1{
@@ -86,21 +97,867 @@ body,html{
       height: 1.04rem;
       background: url(../img/lv_yun1.png) no-repeat center;
       background-size: 100% 100%;
-      .pos(absolute,5.76rem,5.0rem,1);
+      .pos(absolute,5.76rem,5.0rem,0);
+      transform: translateZ(20px);
+      z-index: 999;
+      animation: 15s yunmove1  forwards  infinite linear;
   }
+  
+  .yun2{
+      width: 1.54rem;
+      height: 0.94rem;
+      background: url(../img/lv_yun2.png) no-repeat center;
+      background-size: 100% 100%;
+      .pos(absolute,-0.2rem,5.96rem,0);
+transform: translateZ(40px);
+      
+      animation: 6s yunmove2  forwards alternate  infinite linear;
+  }
+  
+  .yun3{
+      width: 1.58rem;
+      height: 0.82rem;
+      background: url(../img/lv_yun3.png) no-repeat center;
+      background-size: 100% 100%;
+      .pos(absolute,7.10rem,1.90rem,0);
+transform: translateZ(30px);
+      
+      animation: 6s yunmove3 forwards  infinite linear;
+  }
+  
+  
+  
+  
+  
+  //2
+  
+  .lv_tu{
+      width: 5.9rem;
+      height: 2.61rem;
+      background: url(../img/lv_houtu.png) no-repeat center;
+      background-size: 100% 100%;
+      .pos(absolute,-0.2rem,7.40rem,0);
+      transform: translateZ(50px);
+  }
+  
+  
+  .lv_fj{
+      width: 2.75rem;
+      height: 2.22rem;
+      background: url(../img/lv_lou.png) no-repeat center;
+      background-size: 100% 100%;
+      .pos(absolute,4.4rem,6.84rem,0);
+      transform: translateZ(60px);
+  }
+  
+  
+   .lv_tu_di{
+      width: 2.08rem;
+      height: 1.61rem;
+      background: url(../img/lv_tu.png) no-repeat center;
+      background-size: 100% 100%;
+      .pos(absolute,5rem,7.59rem,0);
+      z-index: 99;
+      transform: translateZ(70px);
+  }
+  
+  
+   
+  
+  
+  .lv_gong{
+      width: 6.48rem;
+      height: 1.42rem;
+      background: url(../img/lv_gugong.png) no-repeat center;
+      background-size: 100% 100%;
+      .pos(absolute,0.5rem,8.24rem,0);
+      transform: translateZ(80px);
+      z-index: 100;
+  }
+  
+ 
+  
+  
+  
+  .lv_tt{
+      width: 1.27rem;
+      height: 1.18rem;
+      background: url(../img/lv_tiantan.png) no-repeat center;
+      background-size: 100% 100%;
+      .pos(absolute,0.48rem,6.6rem,0);
+      transform: translateZ(90px);
+  }
+  
+  
+  
+  
+  
+  //----------------------------------
+  
+  .lv_change{
+      width: 4.97rem;
+      height: 4.97rem;
+      background: url(../img/lv_change.png) no-repeat center;
+      background-size: 100% 100%;
+      .pos(absolute,1.76rem,5.3rem,0);
+       z-index: 101;
+       transform: translate3d(300px,300px,100px);
+       animation: 5s lv_change 10s forwards;
+       
+       img{
+            position: absolute;
+            bottom: 0.7rem;
+            right: 3.5rem;
+            width: 0.93rem;
+            transform-origin: center bottom; 
+            animation: 2s lv_change_img 11s forwards linear;
+       }
+       
+  }
+  
+  .lv_tuzi{
+      width: 2.57rem;
+      height: 2.31rem;
+      background: url(../img/lv_tuzi.png) no-repeat center;
+      background-size: 100% 100%;
+      .pos(absolute,4.64rem,7.90rem,0);
+       z-index: 101;
+       transform:translate3d(300px,300px,100px);
+       animation: 5s lv_change 11s forwards;
+  }
+  
+  
+   .lv_qian{
+      width: 1.91rem;
+      height: 1.7rem;
+      background: url(../img/lv_tqian.png) no-repeat center;
+      background-size: 100% 100%;
+      .pos(absolute,-0.48rem,7.67rem,0);
+      z-index: 101;
+      transform: translateZ(120px);
+  }
+  
+  
+  .lv_qian2{
+      width: 0.92rem;
+      height: 0.85rem;
+      background: url(../img/lv_tqian2.png) no-repeat center;
+      background-size: 100% 100%;
+      .pos(absolute,6.6rem,7.1rem,0);
+      z-index: 101;
+      transform: translateZ(120px);
+  }
+  
+  
+  .lv_tibg{
+      width: 8.09rem;
+      height: 2.82rem;
+      background: url(../img/lv_tyun.png) no-repeat center;
+      background-size: 100% 100%;
+      .pos(absolute,-0.5rem,1.90rem,0);
+      transform: translateZ(130px);
+  }
+  
+  
+  .lv_title{
+      width: 7.49rem;
+      height: 2.88rem;
+      background: url(../img/lv_t1.png) no-repeat center;
+      background-size: 100% 100%;
+      .pos(absolute,0rem,1.2rem,0);
+      transform: translateZ(140px);
+
+  }
+  
+  .lv_title1{
+      width: 6.34rem;
+      height: 2.16rem;
+      background: url(../img/lv_ttitle.png) no-repeat center;
+      background-size: 100% 100%;
+      .pos(absolute,0.44rem,3.85rem,0);
+      transform: translateZ(150px);
+  }
+  
+  .lv_qiu{
+      width: 0.65rem;
+      height: 0.62rem;
+      background: url(../img/lv_tqiu.png) no-repeat center;
+      background-size: 100% 100%;
+      .pos(absolute,0.2rem,5.14rem,0);
+      transform: translateZ(160px);
+  }
+  
+  
+  
+  
+  .lv_d1{
+     .pos(absolute,-0.5rem,-0.3rem,0);
+     transform-origin: 2.12rem 0rem;
+     animation: 3s dengRotate forwards alternate infinite ease;
+     z-index: 110;
+     div{
+         position: relative;
+         
+         .d_1{
+             width: 2.12rem;
+             height: 2.7rem;
+            .pos(absolute,0rem,0rem,0);
+            z-index: 101;
+        }
+        
+        .d_2{
+             width: 0.63rem;
+             height: 0.49rem;
+            .pos(absolute,0rem,2rem,0);
+            transform-origin:0.63rem 0rem;
+            animation: 3s zixu 0.5s forwards alternate infinite ease;
+            z-index: 100;
+        }
+     }
+     
+  }
+  
+  
+  
+  
+  .lv_d2{
+     .pos(absolute,6rem,-0.2rem,0);
+
+     transform-origin: 0.5rem 0rem;
+     animation: 3s dengRotate1 forwards alternate infinite ease;
+     z-index: 110;
+     div{
+         position: relative;
+         
+         .d_1{
+             width: 2.04rem;
+             height: 2.66rem;
+            .pos(absolute,0rem,0rem,0);
+            z-index: 101;
+        }
+        
+        .d_2{
+             width: 0.37rem;
+             height: 0.67rem;
+            .pos(absolute,1.2rem,2.1rem,0);
+            transform-origin:0.1rem 0rem;
+            animation: 3s zixu1 0.5s forwards alternate infinite ease;
+            z-index: 100;
+        }
+     }
+     
+  }
+  
+  
+  
+  .lv_but_l{
+      position: absolute;
+      left: 0.8rem;
+      bottom: 0.6rem;
+      z-index: 200;
+      
+      div{
+          position: relative;
+          width: 2.70rem;
+            height: 1.10rem;
+          
+          .but_img{
+            position: absolute;
+            width: 2.70rem;
+            height: 1.10rem;
+            z-index: 100;
+         }
+         
+        
+         
+         .but_img1{
+            position: absolute;
+            width: 1.56rem;
+            height: 0.58rem;
+            z-index: 102;
+            bottom: -0.2rem;
+            right: -0.33rem;
+            animation: 2s bun_r forwards alternate linear infinite;
+         }
+         
+         .but_img2{
+            position: absolute;
+            width: 1.56rem;
+            height: 0.58rem;
+            z-index: 102;
+            bottom: -0.2rem;
+            left: -0.33rem;
+            animation: 2s bun_l forwards alternate linear infinite;
+
+         }
+          
+      }
+      
+  }
+  
+  
+  .lv_but_2{
+      position: absolute;
+      right: 0.8rem;
+      bottom:0.6rem;
+       z-index: 200;
+      div{
+          position: relative;
+          width: 2.70rem;
+            height: 1.10rem;
+          
+          .but_img{
+            position: absolute;
+            width: 2.70rem;
+            height: 1.10rem;
+            z-index: 112;
+         }
+         
+        
+         
+         .but_img1{
+            position: absolute;
+            width: 0.45rem;
+            height: 1.54rem;
+            z-index: 110;
+            bottom: 0.3rem;
+            right: 0rem;
+            transform-origin: center bottom; 
+            animation: 2s but_l forwards alternate linear infinite;
+         }
+         
+         .but_img2{
+            position: absolute;
+            width: 0.45rem;
+            height: 1.54rem;
+            z-index: 110;
+            bottom:0.3rem;
+            left: 0;
+            transform-origin: center bottom;
+            animation: 2s but_r forwards alternate linear infinite;
+         }
+          
+      }
+      
+  }
+  
+  
+  
   
 }
 
 
 
 
+
+
+//login
+
+.lv_login{
+    height: 7.17rem;
+    background: url(../img/lv_login_bg.png) no-repeat center;
+    background-size: 100% 100%;
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 1.1rem;
+    padding-top:2.2rem;
+    margin-top: 1rem;
+    
+    .lv_close{
+        width: 0.68rem;
+        height: 0.68rem;
+        background: url(../img/lv_close.png) no-repeat center;
+        background-size: 100% 100%;
+        .pos(absolute,6.2rem,1rem,0);
+    }
+}
+
+
+.lv_logbox{
+    width: 5.26rem;
+
+    
+    >p{
+        font-size: 0.2rem;
+        color: #fff;
+        margin: 10px 0;
+    }
+    
+    .lv_li{
+        
+        margin-bottom: 0.3rem;
+        
+        input{
+            width: 100%;
+        }
+        
+        a{
+            float: right;
+            width: 1.38rem;
+            height: 0.78rem;
+            background: url(../img/lv_yzm.png) no-repeat center;
+            background-size: 100% 100%;
+            font-size: 0.25rem;
+            text-align: center;
+            line-height: 0.32rem;
+            padding: 0.05rem;
+            color: #fff;
+        }
+    }
+    
+    .lv_li_tel{
+        overflow: hidden;
+        
+        input{
+            width: 3.60rem;
+            float: left;
+
+        }
+    }
+    
+}
+
+.lv_input{
+    height: 0.78rem;
+    background: #fff;
+    border-radius: 5px;
+    padding: 0 10px;
+    color: #a8a8a8;
+    font-size: 0.3rem;
+    border-top: 3px solid #d8d8d8;
+}
+
+
+.lv_sub{
+    height: 1.1rem;
+    text-align: center;
+    
+    img{
+        height: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+//explain
+
+.lv_explain{
+    min-height: 5rem;
+    width: 6.42rem;
+    background: url(../img/lv_line.png) repeat-y center top;
+    background-size: 100% auto; 
+    position: relative;
+    margin-top: 2.68rem;
+    margin-left: 0.5rem;
+    padding:0 0.7rem 0 0.55rem;
+    
+    .lv_j1,.lv_j2{
+        position: absolute;
+        width: 0.79rem;
+        height: 0.84rem;
+        top: 0.12rem;
+        z-index: 999;
+        left: -1rem;
+        transform-origin: top right;
+        
+    }
+    
+    .lv_j1{
+        animation: 2s fengchui alternate forwards infinite linear;
+    }
+    
+    .lv_j2{
+        right: -1rem;
+        left: auto;
+        transform-origin: top left;
+
+        animation: 2s fengchuir  alternate  forwards   infinite  linear ;
+    }
+    
+    &:after{
+        content: '';
+        position: absolute;
+
+        left: 0;
+        width: 100%;
+        height: 1.68rem;
+        top: -1.68rem;
+        background: url(../img/lv_qiangtop.png) no-repeat center top;
+        background-size: 100% auto;
+    }
+    
+    &:before{
+        content: '';
+        position: absolute;
+
+        left: 0;
+        width: 100%;
+        height: 1.06rem;
+        bottom: -1.06rem;
+        background: url(../img/lv_qiangbottom.png) no-repeat center top;
+        background-size: 100% auto;
+    }
+    
+    
+    
+    .lv_exbox{
+        position: relative;
+        top: -0.8rem;
+
+    }
+    
+    
+    
+    .lv_bangtitle{
+        height: 1.7rem;
+        width: 1rem;
+        background: url(../img/lv_duilian.png) no-repeat left top;
+        background-size: auto 1.7rem; 
+        position: relative;
+
+        left:0.3rem;
+        z-index: 101;
+        animation: 1s widthhover 0.5s forwards;
+        
+        img{
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        
+    }
+    
+    
+    
+    .lvtext{
+        color: #40210a;
+        font-size: 0.2rem;
+        padding: 0 0.28rem;
+        
+        p{
+            text-align: justify;
+        }
+        
+        h1{
+            font-size: 0.24rem;
+            text-align: center;
+            margin: 0.1rem 0;
+            
+            strong{
+                font-weight: bold;
+            }
+        }
+    }
+    
+    
+    
+    .but_know{
+        height: 0.8rem;
+        display: block;
+        text-align: center;
+        position: absolute;
+        bottom: -1.2rem;
+        left: 50%;
+        margin-left: -1.17rem;
+        
+        img{
+            height: 100%;
+        }
+    }
+    
+    
+    
+           
+}
+
+
+
+
+
+//sign
+.lv_sign{
+    background: url(../img/lv_bak.jpg) no-repeat left top;
+    background-size: 100% 100%;
+    height: 100%;
+    padding-top:0.72rem;
+    
+    .sig_box{
+        width: 7.33rem;
+        height: 10.47rem;
+        background: url(../img/lv_background.png) no-repeat left top;
+        background-size: 100% 100%;
+        padding-top: 2.24rem;
+        padding-left:0.77rem;
+        padding-right:0.77rem;
+        position: relative;
+        
+        p{
+            margin-bottom: 0.5rem;
+            input{
+                width: 100%;
+            }
+        }
+        
+        .lv_tijiao{
+            display: block;
+            height: 1.89rem;
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            transform-origin: bottom;
+            animation: 1s lv_tijiao forwards alternate infinite;
+            
+
+            img{
+                height: 100%;
+            }
+        }
+    }
+}
+
+
+.lv_inp{
+    height: 0.87rem;
+    background: #fff;
+    font-size:0.33rem;
+    color: #a8a8a8;
+    padding: 0 0.36rem;
+    border: 2px solid #40210a;
+    border-radius: 5px;
+}
+
+
 /*ANIMATION TRANSFORM*/
+
+@keyframes lv_tijiao{
+    0%{
+        transform: rotateX(-30deg)  skew(0);
+    }
+    100%{
+        transform: rotateX(0deg)  skew(0);
+    }
+}
+
+
+@keyframes widthhover{
+  0%{
+    width: 1rem;
+  }
+  
+  100%{
+    width: 4.6rem;
+  }
+}
+
+@keyframes fengchui{
+  0%{
+    transform: rotate(10deg);
+  }
+  
+  100%{
+    transform: rotate(0);
+  }
+}
+
+
+@keyframes fengchuir{
+  0%{
+    transform: rotate(-10deg);
+  }
+  
+  
+  100%{
+    transform: rotate(0);
+  }
+}
+
+
+
+@keyframes but_l {
+  0%{
+    transform: rotate(10deg);
+  }
+  100%{
+    transform: rotate(0);
+  }
+}
+
+@keyframes but_r {
+  0%{
+    transform: rotate(-10deg);
+  }
+  100%{
+    transform: rotate(0);
+  }
+}
+
+
+
+@keyframes bun_l {
+  0%{
+    transform: translate(0.2rem,0);
+  }
+  100%{
+    transform: translate(0,0);
+  }
+}
+
+@keyframes bun_r {
+  0%{
+    transform: translate(-0.2rem,0);
+  }
+  100%{
+    transform: translate(0,0);
+  }
+}
+
+
+
+
+@keyframes dengRotate1 {
+  0%{
+    transform: rotate(10deg);
+  }
+  100%{
+    transform: rotate(50deg);
+  }
+}
+
+
+@keyframes zixu1 {
+  0%{
+    transform: rotate(-50deg);
+  }
+  100%{
+    transform: rotate(10deg);
+  }
+}
+
+
+
+
+@keyframes dengRotate {
+  0%{
+    transform: rotate(-10deg);
+  }
+  100%{
+    transform: rotate(-50deg);
+  }
+}
+
+
+@keyframes zixu {
+  0%{
+    transform: rotate(10deg);
+  }
+  100%{
+    transform: rotate(-50deg);
+  }
+}
+
 
 @keyframes yuerotate {
   0%{
-    transform: rotate(0);
+    transform: rotate(0) translateZ(10px);
   }
   100%{
-    transform: rotate(360deg);
+    transform: rotate(360deg) translateZ(10px);
+  }
+}
+
+@keyframes yunmove1 {
+  0%{
+    transform: translateX(-25rem) translateZ(200px);
+  }
+  100%{
+    transform: translateX(5rem) translateZ(200px);
+  }
+}
+
+
+@keyframes yunmove2 {
+  0%{
+      transform:translateX(1rem) translateY(0.3rem) translateZ(100px);
+  }
+  30%{
+      transform:translateX(3rem) translateY(-0.2rem) translateZ(100px);
+  }
+  60%{
+     transform:translateX(4rem) translateY(0.2rem) translateZ(100px); 
+  }
+  100%{
+     transform:translateX(5rem) translateY(-0.3rem) translateZ(100px);
+  }
+}
+
+
+@keyframes yunmove3 {
+  0%{
+    transform: translateX(0rem) translateZ(300px);
+  }
+  100%{
+    transform: translateX(-25rem) translateZ(300px);
+  }
+}
+
+
+
+@keyframes lv_change {
+  0%{
+    transform:translate3d(300px,300px,100px);
+  }
+  100%{
+    transform:translate3d(0,0,100px);
+  }
+}
+
+
+@keyframes lv_change_img {
+  0%{
+    transform:rotate(0deg);
+  }
+  25%{
+    transform:rotate(30deg);
+  }
+  50%{
+    transform:rotate(0deg);
+  }
+  75%{
+    transform:rotate(30deg);
+  }
+  100%{
+    transform:rotate(0deg);
+  }
+}
+
+
+
+@keyframes lv_tuzi {
+  0%{
+    transform: translateX(0rem) translateZ(300px);
+  }
+  100%{
+    transform: translateX(-25rem) translateZ(300px);
+  }
+}
+
+
+
+
+
+@keyframes box_per {
+  0%{
+    perspective:1px;
+  }
+  
+  100%{
+    perspective:5000px;
   }
 }
