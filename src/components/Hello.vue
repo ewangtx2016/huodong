@@ -1,5 +1,11 @@
 <template>
-
+  <div class="lv_box">
+  	<!--c1-->
+      <div class="lv_guang"></div>
+      <div class="lv_moon"></div>
+    <!--c2-->
+    	<div class="yun1"></div>
+  </div>
 </template>
 
 <script>
