@@ -15,7 +15,7 @@
                   <div></div>
                 </div>
               </div>
-               <span class="zhulibtn" @click="fn">
+               <span class="zhulibtn" @click="tishi">
                  <img src="../public/img/z_zhulibtn.png" alt="">
                </span>
                <span class="fenxiangbtn">
@@ -33,33 +33,6 @@
               <span class="detail-user">
                 <img src="" alt="">
               </span>
-              <div class="detail-info">
-                <span class="ku"></span>
-                <div class="arrow">
-                </div>
-                <span class="xiao"></span>
-                <div class="jindutiao">
-                  <div></div>
-                </div>
-              </div>
-               <span class="zhulibtn">
-                 <img src="../public/img/z_zhulibtn.png" alt="">
-               </span>
-               <span class="fenxiangbtn">
-                 <img src="../public/img/z_fenxiangbtn.png" alt="">
-               </span>
-           </div>
-           <p>
-             <span class="username">张三啊asdsad</span>
-             <span class="info">还差<span class="info-num">1</span>人，拼团成功为8人！</span>
-           </p>
-           <div class="line"></div>
-         </li>
-         <li class="list-item">
-           <div class="detail">
-             <span class="detail-user">
-               <img src="" alt="">
-             </span>
              <div class="detail-info">
                <span class="ku"></span>
                <div class="arrow">
@@ -69,7 +42,7 @@
                  <div></div>
                </div>
              </div>
-             <span class="zhulibtn">
+             <span class="zhulibtn" @click="tishi">
                  <img src="../public/img/z_zhulibtn.png" alt="">
                </span>
              <span class="fenxiangbtn">
@@ -84,9 +57,9 @@
          </li>
          <li class="list-item">
            <div class="detail">
-             <span class="detail-user">
-               <img src="" alt="">
-             </span>
+              <span class="detail-user">
+                <img src="" alt="">
+              </span>
              <div class="detail-info">
                <span class="ku"></span>
                <div class="arrow">
@@ -96,7 +69,142 @@
                  <div></div>
                </div>
              </div>
-             <span class="zhulibtn">
+             <span class="zhulibtn" @click="tishi">
+                 <img src="../public/img/z_zhulibtn.png" alt="">
+               </span>
+             <span class="fenxiangbtn">
+                 <img src="../public/img/z_fenxiangbtn.png" alt="">
+               </span>
+           </div>
+           <p>
+             <span class="username">张三啊asdsad</span>
+             <span class="info">还差<span class="info-num">1</span>人，拼团成功为8人！</span>
+           </p>
+           <div class="line"></div>
+         </li>
+         <li class="list-item">
+           <div class="detail">
+              <span class="detail-user">
+                <img src="" alt="">
+              </span>
+             <div class="detail-info">
+               <span class="ku"></span>
+               <div class="arrow">
+               </div>
+               <span class="xiao"></span>
+               <div class="jindutiao">
+                 <div></div>
+               </div>
+             </div>
+             <span class="zhulibtn" @click="tishi">
+                 <img src="../public/img/z_zhulibtn.png" alt="">
+               </span>
+             <span class="fenxiangbtn">
+                 <img src="../public/img/z_fenxiangbtn.png" alt="">
+               </span>
+           </div>
+           <p>
+             <span class="username">张三啊asdsad</span>
+             <span class="info">还差<span class="info-num">1</span>人，拼团成功为8人！</span>
+           </p>
+           <div class="line"></div>
+         </li>
+         <li class="list-item">
+           <div class="detail">
+              <span class="detail-user">
+                <img src="" alt="">
+              </span>
+             <div class="detail-info">
+               <span class="ku"></span>
+               <div class="arrow">
+               </div>
+               <span class="xiao"></span>
+               <div class="jindutiao">
+                 <div></div>
+               </div>
+             </div>
+             <span class="zhulibtn" @click="tishi">
+                 <img src="../public/img/z_zhulibtn.png" alt="">
+               </span>
+             <span class="fenxiangbtn">
+                 <img src="../public/img/z_fenxiangbtn.png" alt="">
+               </span>
+           </div>
+           <p>
+             <span class="username">张三啊asdsad</span>
+             <span class="info">还差<span class="info-num">1</span>人，拼团成功为8人！</span>
+           </p>
+           <div class="line"></div>
+         </li>
+         <li class="list-item">
+           <div class="detail">
+              <span class="detail-user">
+                <img src="" alt="">
+              </span>
+             <div class="detail-info">
+               <span class="ku"></span>
+               <div class="arrow">
+               </div>
+               <span class="xiao"></span>
+               <div class="jindutiao">
+                 <div></div>
+               </div>
+             </div>
+             <span class="zhulibtn" @click="tishi">
+                 <img src="../public/img/z_zhulibtn.png" alt="">
+               </span>
+             <span class="fenxiangbtn">
+                 <img src="../public/img/z_fenxiangbtn.png" alt="">
+               </span>
+           </div>
+           <p>
+             <span class="username">张三啊asdsad</span>
+             <span class="info">还差<span class="info-num">1</span>人，拼团成功为8人！</span>
+           </p>
+           <div class="line"></div>
+         </li>
+         <li class="list-item">
+           <div class="detail">
+              <span class="detail-user">
+                <img src="" alt="">
+              </span>
+             <div class="detail-info">
+               <span class="ku"></span>
+               <div class="arrow">
+               </div>
+               <span class="xiao"></span>
+               <div class="jindutiao">
+                 <div></div>
+               </div>
+             </div>
+             <span class="zhulibtn" @click="tishi">
+                 <img src="../public/img/z_zhulibtn.png" alt="">
+               </span>
+             <span class="fenxiangbtn">
+                 <img src="../public/img/z_fenxiangbtn.png" alt="">
+               </span>
+           </div>
+           <p>
+             <span class="username">张三啊asdsad</span>
+             <span class="info">还差<span class="info-num">1</span>人，拼团成功为8人！</span>
+           </p>
+           <div class="line"></div>
+         </li>
+         <li class="list-item">
+           <div class="detail">
+              <span class="detail-user">
+                <img src="" alt="">
+              </span>
+             <div class="detail-info">
+               <span class="ku"></span>
+               <div class="arrow">
+               </div>
+               <span class="xiao"></span>
+               <div class="jindutiao">
+                 <div></div>
+               </div>
+             </div>
+             <span class="zhulibtn" @click="tishi">
                  <img src="../public/img/z_zhulibtn.png" alt="">
                </span>
              <span class="fenxiangbtn">
@@ -122,9 +230,11 @@
 
         },
         methods: {
-         fn(){
-           this.$router.push('/userdetail/myjoin')
-         }
+          tishi(){
+            if(confirm('亲！只能助力一次哦，选个人数最多的去助力吧！')){
+              this.$router.push('/userdetail/myjoin')
+            }
+          }
         }
     }
 </script>
@@ -138,8 +248,9 @@
     overflow: hidden;
     .list {
       width: 6.11rem;
-      margin: 3.2rem auto 0;
-
+      margin: 3rem auto 0;
+      height: 7.5rem;
+      overflow: auto;
 
       .list-item {
         width: 100%;

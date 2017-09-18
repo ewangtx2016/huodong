@@ -28,7 +28,7 @@
     export default {
         data() {
             return {
-              flag:'22'
+              flag:'67567'
             }
         },
         components: {},
