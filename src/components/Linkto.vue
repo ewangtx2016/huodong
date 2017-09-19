@@ -28,7 +28,11 @@
     export default {
         data() {
             return {
+<<<<<<< HEAD
               flag:'[]'
+=======
+              flag:'67567'
+>>>>>>> fcd12c92f0ac6f2b2125d9b708bbaeb11eb7a5e4
             }
         },
         components: {},
