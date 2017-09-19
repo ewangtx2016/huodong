@@ -87,7 +87,7 @@
     components: {},
     methods: {
       fn(){
-        this.$router.push('/userdetail/mystart')
+        this.$router.push('/listdetail')
       },
       isShow(){
         this.num+=1;

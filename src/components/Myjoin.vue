@@ -16,7 +16,7 @@
             </div>
           </div>
 
-          <span class="fenxiangbtn"></span>
+          <span class="fenxiangbtn" @click="fn"></span>
         </div>
         <p>
           <span class="username">张三啊asdsad</span>
@@ -36,7 +36,7 @@
         components: {},
         methods: {
           fn(){
-            this.$router.push('/userdetail/mystart')
+            this.$router.push('/listdetail')
           }
         }
     }

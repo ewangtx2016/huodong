@@ -1,5 +1,6 @@
 <template>
     <div class="content">
+      <Publicbtn></Publicbtn>
        <ul class="list">
          <li class="list-item">
            <div class="detail">
@@ -45,7 +46,7 @@
              <span class="zhulibtn" @click="tishi">
                  <img src="../public/img/z_zhulibtn.png" alt="">
                </span>
-             <span class="fenxiangbtn">
+             <span class="fenxiangbtn" @click="toDetail">
                  <img src="../public/img/z_fenxiangbtn.png" alt="">
                </span>
            </div>
@@ -72,7 +73,7 @@
              <span class="zhulibtn" @click="tishi">
                  <img src="../public/img/z_zhulibtn.png" alt="">
                </span>
-             <span class="fenxiangbtn">
+             <span class="fenxiangbtn" @click="toDetail">
                  <img src="../public/img/z_fenxiangbtn.png" alt="">
                </span>
            </div>
@@ -99,7 +100,7 @@
              <span class="zhulibtn" @click="tishi">
                  <img src="../public/img/z_zhulibtn.png" alt="">
                </span>
-             <span class="fenxiangbtn">
+             <span class="fenxiangbtn" @click="toDetail">
                  <img src="../public/img/z_fenxiangbtn.png" alt="">
                </span>
            </div>
@@ -113,13 +114,14 @@
     </div>
 </template>
 <script>
+  import Publicbtn from './Publicbtn.vue'
     export default {
 
         data() {
             return {}
         },
         components: {
-
+          Publicbtn
         },
         methods: {
           tishi(){
