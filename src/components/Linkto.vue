@@ -1,20 +1,27 @@
 <template>
     <div class="nav">
-      <router-link to="/userdetail/mystart">
+      <router-link to="/userdetail/mystart" v-show="flagStart">
         <div class="nav-start">
           <span>
             <img src="../public/img/z-faqi.png" alt="">
           </span>
         </div>
       </router-link>
-      <router-link to="/userdetail/myjoin" v-show="flag">
+      <router-link to="/userdetail/Nostart"v-show="!flagStart">
+        <div class="nav-start">
+          <span>
+            <img src="../public/img/z-faqi.png" alt="">
+          </span>
+        </div>
+      </router-link>
+      <router-link to="/userdetail/myjoin" v-show="flagJoin">
         <div class="nav-join">
           <span>
             <img src="../public/img/z_canyu.png" alt="">
           </span>
         </div>
       </router-link>
-      <router-link to="/userdetail/nojoin" v-show="!flag">
+      <router-link to="/userdetail/nojoin" v-show="!flagJoin">
         <div class="nav-join">
           <span>
             <img src="../public/img/z_canyu.png" alt="">
@@ -29,10 +36,15 @@
         data() {
             return {
 <<<<<<< HEAD
+<<<<<<< HEAD
               flag:'[]'
 =======
               flag:'67567'
 >>>>>>> fcd12c92f0ac6f2b2125d9b708bbaeb11eb7a5e4
+=======
+              flagStart:'',
+              flagJoin:'',
+>>>>>>> d2c4648a4bf4b78f93f6e111f47e5d22b5388bf9
             }
         },
         components: {},

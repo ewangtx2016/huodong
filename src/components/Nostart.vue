@@ -12,7 +12,7 @@
         components: {},
         methods: {
           fn(){
-            this.$router.push('/list')
+            this.$router.push('/sign')
           }
         }
     }
@@ -24,7 +24,7 @@
    top: 3rem;
    width:6.7rem;
    bottom:0.5rem;
-   background: url("../public/img/z-xiaolong_03.png") no-repeat center center;
+   background: url("../public/img/z_nostart.png") no-repeat center center;
    background-size:100% 100% ;
   .btn{
     width:3.3rem;

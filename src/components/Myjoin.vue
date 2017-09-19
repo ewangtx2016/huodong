@@ -15,12 +15,8 @@
               <div></div>
             </div>
           </div>
-          <span class="chakanbtn" @click="fn">
 
-               </span>
-          <span class="fenxiangbtn">
-
-               </span>
+          <span class="fenxiangbtn"></span>
         </div>
         <p>
           <span class="username">张三啊asdsad</span>
@@ -51,7 +47,7 @@
     position: absolute;
     top: 3rem;
     width:6.7rem;
-    height:9.7rem ;
+    bottom:0.5rem;
     background: url("../public/img/z_bgfaqi.png") no-repeat center center;
     background-size:100% 100% ;
     .list {
@@ -82,19 +78,21 @@
             position: relative;
             display: inline-block;
             vertical-align: middle;
-            width: 2.27rem;
+            width: 2.79rem;
             height: .9rem;
-            margin-left: .1rem;
+            margin-left: .3rem;
             .jindutiao {
               margin: 0.43rem auto 0;
-              width: 2.29rem;
+              width: 2.64rem;
               height: .35rem;
               border: 1px solid #40210a;
               border-radius: 0.05rem;
               div {
                 height: 100%;
-                width: 0.287rem;
+                /*每增加一个人宽度增加0.325rem*/
+                width: .325rem;
                 background: #eb204d;
+                border-right: 1px solid #40210a;
               }
             }
             .xiao, .ku, .arrow {
@@ -115,7 +113,7 @@
               right: -.05rem;
             }
             .arrow {
-              /*每次走0.17rem成功后到头*/
+              /*每次走0.22rem成功后到头*/
               position: absolute;
               display: inline-block;
               width: 0.24rem;
@@ -125,22 +123,18 @@
               background-position: -2.4rem 0;
             }
           }
-          .fenxiangbtn, .chakanbtn {
+          .fenxiangbtn {
             display: inline-block;
             vertical-align: middle;
-            margin-left: .08rem;
-            width: 1.28rem;
-            height: 0.7rem;
+            margin-left: .28rem;
+            width: 1.6rem;
+            height: 0.78rem;
             background: url("../public/img/z_icon.png") no-repeat;
             background-size: 6rem 6rem;
             font-size: 0;
+            background-position: -3.81rem -1.7rem;
           }
-          .chakanbtn{
-            background-position: -1.90rem -1.77rem;
-          }
-          .fenxiangbtn{
-            background-position: 0 -1.77rem;
-          }
+
         }
         p {
           font-size: 0.18rem;
@@ -152,7 +146,7 @@
           .username {
             width: 0.95rem;
             color: #40210a;
-            margin: 0 .06rem 0 .05rem;
+            margin: 0 .24rem 0 .05rem;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;

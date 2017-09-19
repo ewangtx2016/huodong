@@ -9,6 +9,8 @@ import Mystart from '@/components/Mystart'
 import Sign from '@/components/Sign'
 import Userdetail from '@/components/Userdetail'
 import Nojoin from '@/components/Nojoin'
+import Nostart from '@/components/Nostart'
+import Listdetail from '@/components/Listdetail'
 
 Vue.use(Router)
 
@@ -24,6 +26,10 @@ export default new Router({
       component: List
     },
     {
+      path: '/listdetail',
+      component: Listdetail
+    },
+    {
       path: '/userdetail',
       component: Userdetail,
       children:[
@@ -33,12 +39,16 @@ export default new Router({
 
         },
         {
+          path: 'nojoin',
+          component: Nojoin
+        },
+        {
           path: 'mystart',
           component: Mystart
         },
         {
-          path: 'nojoin',
-          component: Nojoin
+          path: 'nostart',
+          component: Nostart
         },
       ]
     },
