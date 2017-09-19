@@ -1,20 +1,27 @@
 <template>
     <div class="nav">
-      <router-link to="/userdetail/mystart">
+      <router-link to="/userdetail/mystart" v-show="flagStart">
         <div class="nav-start">
           <span>
             <img src="../public/img/z-faqi.png" alt="">
           </span>
         </div>
       </router-link>
-      <router-link to="/userdetail/myjoin" v-show="flag">
+      <router-link to="/userdetail/Nostart"v-show="!flagStart">
+        <div class="nav-start">
+          <span>
+            <img src="../public/img/z-faqi.png" alt="">
+          </span>
+        </div>
+      </router-link>
+      <router-link to="/userdetail/myjoin" v-show="flagJoin">
         <div class="nav-join">
           <span>
             <img src="../public/img/z_canyu.png" alt="">
           </span>
         </div>
       </router-link>
-      <router-link to="/userdetail/nojoin" v-show="!flag">
+      <router-link to="/userdetail/nojoin" v-show="!flagJoin">
         <div class="nav-join">
           <span>
             <img src="../public/img/z_canyu.png" alt="">
@@ -28,7 +35,8 @@
     export default {
         data() {
             return {
-              flag:'67567'
+              flagStart:'',
+              flagJoin:'',
             }
         },
         components: {},

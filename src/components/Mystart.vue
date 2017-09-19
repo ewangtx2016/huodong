@@ -2,28 +2,28 @@
   <div class="nojoin">
     <ul class="list">
       <li class="list-item">
-      <div class="detail">
+        <div class="detail">
              <span class="detail-user">
                 <span>1</span>
              </span>
-        <div class="detail-info">
-          <span class="ku"></span>
-          <div class="arrow">
+          <div class="detail-info">
+            <span class="ku"></span>
+            <div class="arrow">
+            </div>
+            <span class="xiao"></span>
+            <div class="jindutiao">
+              <div></div>
+            </div>
           </div>
-          <span class="xiao"></span>
-          <div class="jindutiao">
-            <div></div>
-          </div>
-        </div>
-        <span class="chakanbtn" @click="fn">
+          <span class="chakanbtn" @click="fn">
 
                </span>
-      </div>
-      <p>
-        <span class="info">还差<span class="info-num">1</span>人，拼团成功为8人！</span>
-      </p>
-      <div class="line"></div>
-    </li>
+        </div>
+        <p>
+          <span class="info">还差<span class="info-num">1</span>人，拼团成功为8人！</span>
+        </p>
+        <div class="line"></div>
+      </li>
       <li class="list-item">
         <div class="detail">
              <span class="detail-user">
@@ -71,18 +71,29 @@
         <div class="line"></div>
       </li>
     </ul>
+    <div :class="btnFlag ? 'redBtn':'grayBtn'" @click="isShow" ></div>
   </div>
 </template>
 
 <script>
+  import Nostart from './Nostart.vue'
   export default {
     data() {
-      return {}
+      return {
+        num:1,
+        btnFlag:true,
+      }
     },
     components: {},
     methods: {
       fn(){
         this.$router.push('/userdetail/mystart')
+      },
+      isShow(){
+        this.num+=1;
+        if(this.num===3){
+          this.btnFlag=false
+        }
       }
     }
   }
@@ -92,11 +103,24 @@
   .nojoin{
     position: absolute;
     top: 3rem;
-    /*bottom:0.5rem;*/
+    bottom:0.5rem;
     width:6.7rem;
-    height:9.7rem ;
     background: url("../public/img/z_bgcanyu.png") no-repeat center center;
     background-size:100% 100% ;
+    .redBtn{
+      width:3.14rem;
+      height: 1.1rem;
+      background: url("../public/img/z_start-btn-red.png");
+      background-size: 100% 100%;
+      margin: 0.7rem auto 0;
+    }
+    .grayBtn{
+      width:3.14rem;
+      height: 1.1rem;
+      background: url("../public/img/z_start-btn-gray.png");
+      background-size: 100% 100%;
+      margin: 0.7rem auto 0;
+    }
     .list {
       width: 6.2rem;
       margin: .8rem auto 0;
