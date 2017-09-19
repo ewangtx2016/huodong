@@ -1,5 +1,6 @@
 <template>
     <div class="content">
+      <Publicbtn></Publicbtn>
         <div class="content-box">
           <div class="header">
            <div class="header-box1"></div>
@@ -31,11 +32,14 @@
 </template>
 
 <script>
+  import Publicbtn from './Publicbtn.vue'
     export default {
         data() {
             return {}
         },
-        components: {},
+        components: {
+          Publicbtn
+        },
         methods: {}
     }
 </script>

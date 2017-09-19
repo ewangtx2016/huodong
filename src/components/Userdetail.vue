@@ -1,5 +1,6 @@
 <template>
     <div class="content">
+      <Publicbtn></Publicbtn>
       <div class="content-bg">
         <div class="user-detail">
           <Linkto></Linkto>
@@ -10,13 +11,15 @@
 </template>7
 
 <script>
+  import Publicbtn from './Publicbtn.vue'
   import Linkto from '@/components/Linkto'
     export default {
         data() {
             return {}
         },
         components: {
-          Linkto
+          Linkto,
+          Publicbtn
         },
         methods: {}
     }
