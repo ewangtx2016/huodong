@@ -35,8 +35,8 @@
     export default {
         data() {
             return {
-              flagStart:'',
-              flagJoin:'',
+              flagStart:'123',
+              flagJoin:'234',
             }
         },
         components: {},

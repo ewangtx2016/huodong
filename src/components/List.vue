@@ -18,7 +18,7 @@
                <span class="zhulibtn" @click="tishi">
                  <img src="../public/img/z_zhulibtn.png" alt="">
                </span>
-               <span class="fenxiangbtn">
+               <span class="fenxiangbtn" @click="toDetail">
                  <img src="../public/img/z_fenxiangbtn.png" alt="">
                </span>
            </div>
@@ -126,6 +126,9 @@
             if(confirm('亲！只能助力一次哦，选个人数最多的去助力吧！')){
               this.$router.push('/userdetail/myjoin')
             }
+          },
+          toDetail(){
+            this.$router.push('/listdetail')
           }
         }
     }
