@@ -35,6 +35,7 @@
     export default {
         data() {
             return {
+
               flagStart:'123',
               flagJoin:'234',
             }
