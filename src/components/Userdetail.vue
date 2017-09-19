@@ -11,16 +11,12 @@
 
 <script>
   import Linkto from '@/components/Linkto'
-  import Myjoin from '@/components/Myjoin'
-  import Mystart from '@/components/Mystart'
     export default {
         data() {
             return {}
         },
         components: {
-          Linkto,
-          Myjoin,
-          Mystart
+          Linkto
         },
         methods: {}
     }

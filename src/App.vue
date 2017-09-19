@@ -12,7 +12,6 @@ export default {
 </script>
 
 <style lang="less">
-
 @import './public/less/public';
 body{
   font-size:0.16rem;

@@ -31,7 +31,6 @@
     height: 1.5rem;
     margin-top:6.5rem;
     margin-left: 1.6rem;
-    background: rebeccapurple;
   }
  }
 </style>
