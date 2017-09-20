@@ -1,4 +1,48 @@
 <template>
+<div class="lv_box_fa">
+
+
+  <!--c7-->
+  <a href="javascript:;" class="lv_d1" @click="lv_show(0)">
+    <div>
+      <img class="d_1" src="../public/img/lv_dbox.png" alt="" />
+      <img class="d_2" src="../public/img/lv_dxia.png" />
+    </div>
+  </a>
+
+  <a href="javascript:;" class="lv_d2" @click="lv_show(1)">
+    <div>
+      <img class="d_1" src="../public/img/lv_hdbox.png" alt="" />
+      <img class="d_2" src="../public/img/lv_hdboxxia.png" />
+    </div>
+  </a>
+
+
+
+  <!--c8-->
+  <router-link to="/sign">
+    <div class="lv_but_l">
+      <div class="boxx">
+        <img class="but_img" src="../public/img/bun_left.png" />
+        <img class="but_img1" src="../public/img/lv_but_yun1.png" />
+        <img class="but_img2" src="../public/img/lv_but_yun2.png" />
+      </div>
+    </div>
+  </router-link>
+
+
+  <router-link to="/list">
+    <div class="lv_but_2">
+      <div class="boxx">
+        <img class="but_img" src="../public/img/bun_right.png" />
+        <img class="but_img1" src="../public/img/lv_but_shou1.png" />
+        <img class="but_img2" src="../public/img/lv_but_shou2.png" />
+      </div>
+    </div>
+  </router-link>
+
+
+
   <div class="lv_box">
   	<!--c1-->
       <div class="lv_guang"></div>
@@ -35,60 +79,34 @@
 
 
 
-    	<!--c7-->
-    	<a href="javascript:;" class="lv_d1" @touchstart="lv_show(0)">
-    		<div>
-    			<img class="d_1" src="../public/img/lv_dbox.png" alt="" />
-    			<img class="d_2" src="../public/img/lv_dxia.png" />
-    		</div>
-    	</a>
-
-    	<a href="javascript:;" class="lv_d2" @touchstart="lv_show(1)">
-    		<div>
-    			<img class="d_1" src="../public/img/lv_hdbox.png" alt="" />
-    			<img class="d_2" src="../public/img/lv_hdboxxia.png" />
-    		</div>
-    	</a>
 
 
 
-    	<!--c8-->
-    	<router-link to="/sign">
-	    	<div class="lv_but_l">
-	    		<div class="boxx">
-	    			<img class="but_img" src="../public/img/bun_left.png" />
-	    			<img class="but_img1" src="../public/img/lv_but_yun1.png" />
-	    			<img class="but_img2" src="../public/img/lv_but_yun2.png" />
-	    		</div>
-	    	</div>
-			</router-link>
 
 
-		<router-link to="/list">
-    	<div class="lv_but_2">
-    		<div class="boxx">
-    			<img class="but_img" src="../public/img/bun_right.png" />
-    			<img class="but_img1" src="../public/img/lv_but_shou1.png" />
-    			<img class="but_img2" src="../public/img/lv_but_shou2.png" />
-    		</div>
-    	</div>
-    </router-link>
 
 
-    <!--alert-->
-    <transition name="fade">
-      <div class="lv_alert"  v-show="alert">
-        <div class="lv_alert_box">
-        	<login v-if="exp==0" @change-v="changeVlue"></login>
-        	<explain v-else-if="exp==1" @change-v="changeVlue"></explain>
-        </div>
-      </div>
-    </transition>
+
 
 </div>
 
 
 
+
+  <!--alert-->
+  <transition name="fade">
+    <div class="lv_alert"  v-show="alert">
+      <div class="lv_alert_box">
+        <login v-if="exp==0" @change-v="changeVlue"></login>
+        <explain v-else-if="exp==1" @change-v="changeVlue"></explain>
+      </div>
+    </div>
+  </transition>
+
+
+
+
+</div>
 
 </template>
 
@@ -130,24 +148,25 @@ export default {
 
 @keyframes bounce-in {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(-100%) translateZ(1000px);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-20px) translateZ(1000px);
   }
   63% {
-    transform: translateY(0);
+    transform: translateY(0) translateZ(1000px);
   }
   70% {
-    transform: translateY(-10px);
+    transform: translateY(-10px) translateZ(1000px);
   }
   100% {
-    transform: translateY(0px);
+    transform: translateY(0px) translateZ(1000px);
   }
 }
 
 .lv_alert{
 	background: rgba(0,0,0,0.5);
+  transform: translateZ(2000px);
 	position: fixed;
 	left: 0;
 	top: 0;
