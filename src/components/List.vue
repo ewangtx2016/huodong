@@ -1,132 +1,165 @@
 <template>
     <div class="content">
       <Publicbtn></Publicbtn>
-       <ul class="list">
-         <li class="list-item">
-           <div class="detail">
+      <ul class="list">
+        <li class="list-item">
+          <div class="detail">
               <span class="detail-user">
                 <img src="" alt="">
               </span>
-              <div class="detail-info">
-                <span class="ku"></span>
-                <div class="arrow">
-                </div>
-                <span class="xiao"></span>
-                <div class="jindutiao">
-                  <div></div>
-                </div>
+            <div class="detail-info">
+              <span class="ku"></span>
+              <div class="arrow" :style="{left:((0.15 * len) + 0.5) + 'rem'}">
               </div>
-               <span class="zhulibtn" @click="tishi">
+              <span class="xiao"></span>
+              <div class="jindutiao">
+                <div :style="{width:(0.28 * len) +'rem'}"></div>
+              </div>
+            </div>
+            <span class="zhulibtn" @click="zhuli">
                  <img src="../public/img/z_zhulibtn.png" alt="">
                </span>
-               <span class="fenxiangbtn" @click="toDetail">
+            <span class="fenxiangbtn" @click="toDetail">
                  <img src="../public/img/z_fenxiangbtn.png" alt="">
                </span>
-           </div>
-           <p>
-             <span class="username">张三啊asdsad</span>
-             <span class="info">还差<span class="info-num">1</span>人，拼团成功为8人！</span>
-           </p>
-           <div class="line"></div>
-         </li>
-         <li class="list-item">
-           <div class="detail">
+          </div>
+          <p>
+            <span class="username">张三啊asdsad</span>
+            <span class="info">还差<span class="info-num">{{8-len}}</span>人，拼团成功为8人！</span>
+          </p>
+          <div class="line"></div>
+        </li>
+        <li class="list-item">
+          <div class="detail">
               <span class="detail-user">
                 <img src="" alt="">
               </span>
-             <div class="detail-info">
-               <span class="ku"></span>
-               <div class="arrow">
-               </div>
-               <span class="xiao"></span>
-               <div class="jindutiao">
-                 <div></div>
-               </div>
-             </div>
-             <span class="zhulibtn" @click="tishi">
+            <div class="detail-info">
+              <span class="ku"></span>
+              <div class="arrow" :style="{left:((0.15 * len) + 0.5) + 'rem'}">
+              </div>
+              <span class="xiao"></span>
+              <div class="jindutiao">
+                <div :style="{width:(0.28 * len) +'rem'}"></div>
+              </div>
+            </div>
+            <span class="zhulibtn" @click="zhuli">
                  <img src="../public/img/z_zhulibtn.png" alt="">
                </span>
-             <span class="fenxiangbtn" @click="toDetail">
+            <span class="fenxiangbtn" @click="toDetail">
                  <img src="../public/img/z_fenxiangbtn.png" alt="">
                </span>
-           </div>
-           <p>
-             <span class="username">张三啊asdsad</span>
-             <span class="info">还差<span class="info-num">1</span>人，拼团成功为8人！</span>
-           </p>
-           <div class="line"></div>
-         </li>
-         <li class="list-item">
-           <div class="detail">
+          </div>
+          <p>
+            <span class="username">张三啊asdsad</span>
+            <span class="info">还差<span class="info-num">1</span>人，拼团成功为8人！</span>
+          </p>
+          <div class="line"></div>
+        </li>
+        <li class="list-item">
+          <div class="detail">
               <span class="detail-user">
                 <img src="" alt="">
               </span>
-             <div class="detail-info">
-               <span class="ku"></span>
-               <div class="arrow">
-               </div>
-               <span class="xiao"></span>
-               <div class="jindutiao">
-                 <div></div>
-               </div>
-             </div>
-             <span class="zhulibtn" @click="tishi">
+            <div class="detail-info">
+              <span class="ku"></span>
+              <div class="arrow" :style="{left:((0.15 * len) + 0.5) + 'rem'}">
+              </div>
+              <span class="xiao"></span>
+              <div class="jindutiao">
+                <div :style="{width:(0.28 * len) +'rem'}"></div>
+              </div>
+            </div>
+            <span class="zhulibtn" @click="zhuli">
                  <img src="../public/img/z_zhulibtn.png" alt="">
                </span>
-             <span class="fenxiangbtn" @click="toDetail">
+            <span class="fenxiangbtn" @click="toDetail">
                  <img src="../public/img/z_fenxiangbtn.png" alt="">
                </span>
-           </div>
-           <p>
-             <span class="username">张三啊asdsad</span>
-             <span class="info">还差<span class="info-num">1</span>人，拼团成功为8人！</span>
-           </p>
-           <div class="line"></div>
-         </li>
-         <li class="list-item">
-           <div class="detail">
+          </div>
+          <p>
+            <span class="username">张三啊asdsad</span>
+            <span class="info">还差<span class="info-num">1</span>人，拼团成功为8人！</span>
+          </p>
+          <div class="line"></div>
+        </li>
+        <li class="list-item">
+          <div class="detail">
               <span class="detail-user">
                 <img src="" alt="">
               </span>
-             <div class="detail-info">
-               <span class="ku"></span>
-               <div class="arrow">
-               </div>
-               <span class="xiao"></span>
-               <div class="jindutiao">
-                 <div></div>
-               </div>
-             </div>
-             <span class="zhulibtn" @click="tishi">
+            <div class="detail-info">
+              <span class="ku"></span>
+              <div class="arrow" :style="{left:((0.15 * len) + 0.5) + 'rem'}">
+              </div>
+              <span class="xiao"></span>
+              <div class="jindutiao">
+                <div :style="{width:(0.28 * len) +'rem'}"></div>
+              </div>
+            </div>
+            <span class="zhulibtn" @click="zhuli">
                  <img src="../public/img/z_zhulibtn.png" alt="">
                </span>
-             <span class="fenxiangbtn" @click="toDetail">
+            <span class="fenxiangbtn" @click="toDetail">
                  <img src="../public/img/z_fenxiangbtn.png" alt="">
                </span>
-           </div>
-           <p>
-             <span class="username">张三啊asdsad</span>
-             <span class="info">还差<span class="info-num">1</span>人，拼团成功为8人！</span>
-           </p>
-           <div class="line"></div>
-         </li>
-       </ul>
+          </div>
+          <p>
+            <span class="username">张三啊asdsad</span>
+            <span class="info">还差<span class="info-num">1</span>人，拼团成功为8人！</span>
+          </p>
+          <div class="line"></div>
+        </li>
+        <li class="list-item">
+          <div class="detail">
+              <span class="detail-user">
+                <img src="" alt="">
+              </span>
+            <div class="detail-info">
+              <span class="ku"></span>
+              <div class="arrow" :style="{left:((0.15 * len) + 0.5) + 'rem'}">
+              </div>
+              <span class="xiao"></span>
+              <div class="jindutiao">
+                <div :style="{width:(0.28 * len) +'rem'}"></div>
+              </div>
+            </div>
+            <span class="zhulibtn" @click="zhuli">
+                 <img src="../public/img/z_zhulibtn.png" alt="">
+               </span>
+            <span class="fenxiangbtn" @click="toDetail">
+                 <img src="../public/img/z_fenxiangbtn.png" alt="">
+               </span>
+          </div>
+          <p>
+            <span class="username">张三啊asdsad</span>
+            <span class="info">还差<span class="info-num">1</span>人，拼团成功为8人！</span>
+          </p>
+          <div class="line"></div>
+        </li>
+
+        <p class="load-more">点击加载更多...</p>
+      </ul>
+
     </div>
 </template>
 <script>
   import Publicbtn from './Publicbtn.vue'
+
     export default {
 
         data() {
-            return {}
+            return {
+               len : 5
+            }
         },
         components: {
-          Publicbtn
+          Publicbtn,
         },
         methods: {
-          tishi(){
+          zhuli(){
             if(confirm('亲！只能助力一次哦，选个人数最多的去助力吧！')){
-              this.$router.push('/userdetail/myjoin')
+
             }
           },
           toDetail(){
@@ -165,6 +198,8 @@
             line-height: .9rem;
             text-align: center;
             img {
+              display:inline-block;
+              border-radius:50%;
               width: 100%;
               height: 100%;
             }
@@ -184,7 +219,7 @@
               border-radius: 0.05rem;
               div {
                 height: 100%;
-                width: 0.287rem;
+
                 background: #eb204d;
               }
             }
@@ -261,6 +296,10 @@
           background: url("../public/img/z_line.png") no-repeat center center;
         }
       }
+    }
+    .load-more{
+      text-align: center;
+      color:blue;
     }
   }
 

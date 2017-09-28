@@ -1,6 +1,7 @@
 <template>
     <div class="content">
-      <Publicbtn></Publicbtn>
+      <Publicbtn>
+      </Publicbtn>
       <div class="content-bg">
         <div class="user-detail">
           <Linkto></Linkto>

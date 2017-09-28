@@ -7,13 +7,13 @@
           </span>
         </div>
       </router-link>
-      <router-link to="/userdetail/Nostart"v-show="!flagStart">
+     <!-- <router-link to="/userdetail/Nostart"v-show="!flagStart">
         <div class="nav-start">
           <span>
             <img src="../public/img/z-faqi.png" alt="">
           </span>
         </div>
-      </router-link>
+      </router-link>-->
       <router-link to="/userdetail/myjoin" v-show="flagJoin">
         <div class="nav-join">
           <span>
@@ -21,13 +21,13 @@
           </span>
         </div>
       </router-link>
-      <router-link to="/userdetail/nojoin" v-show="!flagJoin">
+      <!--<router-link to="/userdetail/nojoin" v-show="!flagJoin">
         <div class="nav-join">
           <span>
             <img src="../public/img/z_canyu.png" alt="">
           </span>
         </div>
-      </router-link>
+      </router-link>-->
     </div>
 </template>
 

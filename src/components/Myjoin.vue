@@ -65,11 +65,13 @@
             display: inline-block;
             width: .9rem;
             height: .9rem;
-            border-radius: 50%;
             border: 1px solid #40210a;
+            border-radius: 50%;
             line-height: .9rem;
             text-align: center;
             img {
+              display:inline-block;
+              border-radius:50%;
               width: 100%;
               height: 100%;
             }

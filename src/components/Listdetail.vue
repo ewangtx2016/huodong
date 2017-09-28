@@ -119,11 +119,14 @@
             margin-bottom: .2rem;
             width: .9rem;
             height: .9rem;
+            border:1px solid #40210a;
             border-radius: 50%;
-            border: 1px solid #40210a;
             background: url("../public/img/z_zlxq-renyuan-bg.png") no-repeat ;
             background-size:100% 100%;
             img {
+              display:inline-block;
+              border-radius:50%;
+              display: block;
               width: 100%;
               height: 100%;
             }
