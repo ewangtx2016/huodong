@@ -13,12 +13,12 @@
    			<p>
    				<input class="lv_inp" placeholder="所学专业" type="text" name="" id="" value="" />
    			</p>
-   			
-   			
+
+
 
    			<div @touchstart="submit" class="lv_tijiao" href="javascript:;"><img src="../public/img/lv_tijiao.png" /></div>
 
-   		
+
    		</div>
    </div>
 </template>
@@ -34,7 +34,7 @@
         		if(confirm('确定要提交吗？')){
         			alert('提交成功！');
         			this.$router.push({
-        				path:'/'
+        				path:'/userdetail/myjoin'
         			})
         		}
         	}

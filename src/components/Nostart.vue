@@ -21,9 +21,9 @@
 <style scoped lang="less">
 .nojoin{
    position: absolute;
-   top: 3rem;
+   top: 2.5rem;
    width:6.7rem;
-   bottom:0.5rem;
+   bottom:1.2rem;
    background: url("../public/img/z_nostart.png") no-repeat center center;
    background-size:100% 100% ;
   .btn{

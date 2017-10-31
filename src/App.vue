@@ -15,5 +15,6 @@ export default {
 @import './public/less/public';
 body{
   font-size:0.16rem;
+  background: #7460f5;
 }
 </style>

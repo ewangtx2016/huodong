@@ -54,7 +54,7 @@
 
 <style scoped lang="less">
   .nav{
-    margin: 2.09rem auto 0;
+    margin: 1.8rem auto 0;
    /* width:4.44rem;*/
     height: 1.54rem;
     a{
