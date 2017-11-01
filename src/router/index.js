@@ -12,7 +12,6 @@ import Userdetail from '@/components/Userdetail'
 import Nojoin from '@/components/Nojoin'
 import Nostart from '@/components/Nostart'
 import Listdetail from '@/components/Listdetail'
-
 Vue.use(Router)
 
 export default new Router({
@@ -33,7 +32,7 @@ export default new Router({
     },
     {
       path: '/listdetail',
-      component: Listdetail
+      component: Listdetail,
     },
     {
       path: '/userdetail',

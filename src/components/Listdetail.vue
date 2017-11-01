@@ -1,6 +1,15 @@
 <template>
     <div class="content">
       <Publicbtn></Publicbtn>
+      <div class="z_tc">
+        <div class="z_arrow">
+          <img src="../public/img/z_arrow.png" alt="">
+        </div>
+        <div class="z_text">
+          <img src="../public/img/z_text.png" alt="">
+        </div>
+
+      </div>
         <div class="content-box">
           <div class="header">
            <div class="header-box1"></div>
@@ -25,7 +34,7 @@
           </div>
           <div class="footer">
             <div class="zhili-btn"></div>
-            <div class="fengxiang-btn"></div>
+            <div class="fengxiang-btn" @click="fn"></div>
           </div>
         </div>
     </div>
@@ -40,7 +49,12 @@
         components: {
           Publicbtn
         },
-        methods: {}
+        methods: {
+          fn(){
+            $('.z_tc').slideDown(300)
+          }
+
+        }
     }
 </script>
 
@@ -155,4 +169,33 @@
       }
     }
   }
+  .z_tc{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 999;
+    color: #ffffff;
+    font-size: 0.4rem;
+    text-align: center;
+    line-height: 2rem;
+    .z_arrow{
+      margin:1.5rem auto 0;
+      width: 3rem;
+      height: 3rem;
+    }
+    .z_text{
+      margin:0 auto;
+      width: 3rem;
+      height: 0.5rem;
+    }
+    img{
+     width: 100%;
+      height: 100%;
+    }
+  }
+
 </style>
