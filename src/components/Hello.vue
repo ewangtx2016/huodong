@@ -78,19 +78,7 @@
     	<div class="lv_qiu"></div>
 
 
-
-
-
-
-
-
-
-
-
-
 </div>
-
-
 
 
   <!--alert-->

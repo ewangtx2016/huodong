@@ -13,6 +13,7 @@ export default {
 
 <style lang="less">
 @import './public/less/public';
+@import "./public/less/animate.css";
 body{
   font-size:0.16rem;
 }

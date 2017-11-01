@@ -1,8 +1,11 @@
 <template>
     <div class="lv_explain">
          <div class="lv_exbox">
-         	<img class="lv_j1" src="../public/img/lv_jiao2.png"/>
-         	<img class="lv_j2" src="../public/img/lv_jiao1.png"/>
+
+           <img class="lv_exbox_hand" src="../public/img/db/db_gz_hand.png" />
+
+         <!--	<img class="lv_j1" src="../public/img/lv_jiao2.png"/>
+         	<img class="lv_j2" src="../public/img/lv_jiao1.png"/>-->
          	<div class="lv_bangtitle"><img src="../public/img/lv_lianr.png" /></div>
          	<div class="lvtext">
          		<h1><strong>活动时间：</strong><font color="#fa3e35">10月1日—10月15日</font></h1>
