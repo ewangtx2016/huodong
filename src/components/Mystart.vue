@@ -102,8 +102,8 @@
 <style scoped lang="less">
   .nojoin{
     position: absolute;
-    top: 3rem;
-    bottom:0.5rem;
+    top: 2.5rem;
+    bottom:1.2rem;
     width:6.7rem;
     background: url("../public/img/z_bgcanyu.png") no-repeat center center;
     background-size:100% 100% ;

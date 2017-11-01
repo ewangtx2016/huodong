@@ -16,5 +16,6 @@ export default {
 @import "./public/less/animate.css";
 body{
   font-size:0.16rem;
+  background: #7460f5;
 }
 </style>

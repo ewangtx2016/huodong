@@ -30,16 +30,16 @@
   .content {
     width:100%;
     height: 100%;
-    background: url("../public/img/lv_bak.jpg") no-repeat;
+   /* background: url("../public/img/lv_bak.jpg") no-repeat;
     background-size: 100% 100%;
     overflow: hidden;
-    padding: 0.28rem 0;
+    padding: 0.28rem 0;*/
     .content-bg{
       width: 100%;
       height: 100% ;
-      background: url("../public/img/z_userbg.png") no-repeat;
+      background: url("../public/img/z_userbg.jpg") no-repeat;
       background-size:100% 100%;
-      padding:0 0.44rem 0.48rem;
+      padding:0 0.44rem 0;
       .user-detail{
         overflow: hidden;
       }
