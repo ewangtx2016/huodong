@@ -13,6 +13,7 @@ import Nojoin from '@/components/Nojoin'
 import Nostart from '@/components/Nostart'
 import Listdetail from '@/components/Listdetail'
 import Rotate from '@/components/Rotate'
+import Award from '@/components/Award'
 Vue.use(Router)
 
 export default new Router({
@@ -56,6 +57,10 @@ export default new Router({
           path: 'nostart',
           component: Nostart
         },
+        {
+          path:'award',
+          component:Award
+        }
       ]
     },
     {

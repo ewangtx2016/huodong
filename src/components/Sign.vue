@@ -1,5 +1,6 @@
 <template>
    <div class="lv_sign">
+      <Publicbtn></Publicbtn>
    		<div class="sig_box">
    			<p>
    				<input class="lv_inp" placeholder="姓名" type="text" name="" id="" value="" />
@@ -24,11 +25,14 @@
 </template>
 
 <script>
+    import Publicbtn from './Publicbtn.vue'
     export default {
         data() {
             return {}
         },
-        components: {},
+        components: {
+          Publicbtn
+        },
         methods: {
         	submit:function(){
         		if(confirm('确定要提交吗？')){

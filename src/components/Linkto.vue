@@ -14,7 +14,7 @@
           </span>
         </div>
       </router-link>-->
-      <router-link to="/userdetail/myjoin" v-show="flagJoin">
+      <router-link class="bj" to="/userdetail/myjoin" v-show="flagJoin">
         <div class="nav-join">
           <span>
             <img src="../public/img/z_canyu.png" alt="">
@@ -28,7 +28,15 @@
           </span>
         </div>
       </router-link>-->
+      <router-link to="/userdetail/award" v-show="flagStart">
+        <div class="nav-start">
+          <span>
+            <img  src="../public/img/z_award.png" alt="">
+          </span>
+        </div>
+      </router-link>
     </div>
+
 </template>
 
 <script>
@@ -73,6 +81,9 @@
           height: 100%;
         }
       }
+    }
+    .bj{
+      margin:0 0.13rem;
     }
    .router-link-active{
      background: url("../public/img/z_active.png") no-repeat center center;
