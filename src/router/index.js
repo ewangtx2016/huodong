@@ -12,6 +12,7 @@ import Userdetail from '@/components/Userdetail'
 import Nojoin from '@/components/Nojoin'
 import Nostart from '@/components/Nostart'
 import Listdetail from '@/components/Listdetail'
+import Rotate from '@/components/Rotate'
 
 Vue.use(Router)
 
@@ -72,5 +73,11 @@ export default new Router({
       path: '/sign',
       component:Sign
     },
+
+    {
+      path: '/rotate',
+      name:'Rotate',
+      component:Rotate
+    }
   ]
 })
