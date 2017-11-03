@@ -34,7 +34,7 @@
         		if(confirm('确定要提交吗？')){
         			alert('提交成功！');
         			this.$router.push({
-        				path:'/userdetail/myjoin'
+        				path:'/userdetail/mystart'
         			})
         		}
         	}

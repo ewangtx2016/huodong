@@ -1,4 +1,5 @@
 $(function() {
+  alert(123);
   var $btn = $('.playbtn');
   var playnum = 1; //初始次数，由后台传入
   $('.playnum').html(playnum);
@@ -9,22 +10,22 @@ $(function() {
     data = data[Math.floor(Math.random() * data.length)];
     switch(data) {
       case 1:
-        rotateFunc(1, 0, '恭喜您获得2000元理财金!');
+        rotateFunc(2, 60, '恭喜您获得888元中博课程神券！');
         break;
       case 2:
-        rotateFunc(2, 60, '谢谢参与~再来一次吧~');
+        rotateFunc(2, 60, '恭喜您获得8688元iPhone X 64G！');
         break;
       case 3:
-        rotateFunc(3, 120, '恭喜您获得5200元理财金!');
+        rotateFunc(3, 120, '恭喜您获得3888元中博课程神券！');
         break;
       case 4:
-        rotateFunc(4, 180, '恭喜您获得100元京东E卡，将在次日以短信形式下发到您的手机上，请注意查收!');
+        rotateFunc(4, 180, '恭喜您获得100元京东E卡!');
         break;
       case 5:
         rotateFunc(5, 240, '谢谢参与~再来一次吧~');
         break;
       case 6:
-        rotateFunc(6, 300, '恭喜您获得1000元理财金!');
+        rotateFunc(6, 300, '恭喜您获得2888元Appwatch3!');
         break;
     }
   }
