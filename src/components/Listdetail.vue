@@ -1,7 +1,7 @@
 <template>
     <div class="content">
       <Publicbtn></Publicbtn>
-      <div class="z_tc">
+      <div class="z_tc" @click="hide()">
         <div class="z_arrow">
           <img src="../public/img/z_arrow.png" alt="">
         </div>
@@ -51,7 +51,10 @@
         },
         methods: {
           fn(){
-            $('.z_tc').slideDown(300)
+            $('.z_tc').slideDown(100);
+          },
+          hide(){
+            $('.z_tc').slideUp(100);
           }
 
         }
