@@ -60,6 +60,17 @@
         </div>
         <div class="line"></div>
       </li>
+      <li class="list-item">
+        <div class="detail">
+             <span class="detail-user">
+                <span>1</span>
+             </span>
+          <span class="list_text">
+            恭喜您获得 iPhone X！
+          </span>
+        </div>
+        <div class="line"></div>
+      </li>
     </ul>
     <div class="btn">
       <span class="left" @click="fn"></span>
@@ -92,7 +103,8 @@
 <style scoped lang="less">
   .nojoin{
     position: absolute;
-    overflow: scroll;
+    padding-top:.3rem;
+    overflow: hidden;
     top: 2.5rem;
     bottom:1.2rem;
     width:6.7rem;
@@ -145,11 +157,11 @@
 
 
     .list {
-      overflow: hidden;
       display:block;
       width: 6.2rem;
-      margin: .7rem auto 0;
-
+      margin: .5rem auto 0;
+      height: 6rem;
+      overflow: scroll;
       .list-item {
         width: 100%;
         height: 1.4rem;
