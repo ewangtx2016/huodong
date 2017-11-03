@@ -62,8 +62,8 @@
       </li>
     </ul>
     <div class="btn">
-      <span class="left"></span>
-      <span class="right"></span>
+      <span class="left" @click="fn"></span>
+      <span class="right"@click="faqi"></span>
     </div>
     <p class="award_text">您已获得 <span>0</span> 次抽奖机会，请发起拼团获取更多！</p>
   </div>
@@ -79,8 +79,11 @@
     components: {},
     methods: {
       fn(){
-        this.$router.push('/listdetail')
+        this.$router.push('/rotate')
       },
+      faqi(){
+        this.$router.push('/userdetail/mystart')
+      }
 
     }
   }
